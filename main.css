@@ -15,7 +15,7 @@ body {
     width: 20px;
 }
 
-#container > div:opacity:hover {
-    opacity: 0.1;
+#container > div:hover {
+    opacity: 0.5;
     background-color: black;
 }
