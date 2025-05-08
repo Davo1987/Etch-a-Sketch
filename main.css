@@ -15,7 +15,10 @@ body {
     width: 20px;
 }
 
+div {
+    text-align: center;
+}
+
 #container > div:hover {
-    opacity: 0.5;
     background-color: black;
 }

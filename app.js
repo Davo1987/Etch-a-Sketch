@@ -3,9 +3,6 @@ const container = document.getElementById('container');
 // Ask user for grid size
 const numberOfDivs = prompt('Enter a number for size of grid')
 
-// Default number of divs to display
-// const numberOfDivs = 16;
-
 // For loop to access all the divs and display on the webpage
 for (let i = 0; i < numberOfDivs; i++) {    
     const newDiv = document.createElement('div');
