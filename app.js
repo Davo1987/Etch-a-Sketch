@@ -3,7 +3,7 @@ const container = document.getElementById('container');
 // Ask user for grid size
 const numberOfDivs = prompt('Enter a number for size of grid')
 
-// For loop to access all the divs and display on the webpage
+// For loop to create the divs and display on the webpage
 for (let i = 0; i < numberOfDivs; i++) {    
     const newDiv = document.createElement('div');
     newDiv.textContent = `Div ${ i + 1}`;
