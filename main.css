@@ -22,3 +22,8 @@ div {
 #container > div:hover {
     background-color: black;
 }
+
+#reset {
+    margin: 1rem;
+    padding: 1rem;
+}
