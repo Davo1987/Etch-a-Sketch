@@ -1,7 +1,7 @@
 const container = document.getElementById('container');
 
 // Function to create grid max of 100
-function createGrid {
+function createGrid () {
     // Ask user for grid size
     const numberOfDivs = prompt('Enter a number for size of grid');
     if ( numberOfDivs < 100 ) {
