@@ -12,7 +12,7 @@ function createGrid () {
             container.appendChild(newDiv);
         }
     } else {
-        alert('Grid is too big. Please tpe in less than 100');
+        alert('Grid is too big. Please type in less than 100');
     }
 }
 
