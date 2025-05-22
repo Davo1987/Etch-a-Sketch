@@ -5,25 +5,25 @@ body {
 
 #container {
     display: flex;
+}
+
+.squares {
+    display: flex;
     flex-wrap: wrap;
 }
 
-#container > div {
-    flex: 1 0 calc(25% - 20px);
-    margin: 5px;
-    height: 20px;
-    width: 20px;
-}
-
-div {
-    text-align: center;
-}
-
-#container > div:hover {
-    background-color: black;
+.square {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid black;
 }
 
 #reset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
     margin: 1rem;
     padding: 1rem;
 }
