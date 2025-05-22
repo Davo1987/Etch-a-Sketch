@@ -6,14 +6,27 @@ const resetButton = document.getElementById('reset');
 // Function to create Div's of no more than 100
 function createGrid () {
     // Ask user for grid size
-    const numberOfDivs = prompt('Enter a number for size of grid');
-    if ( numberOfDivs < 100 ) {
-        // For loop to create the divs and display on the webpage
-        for (let i = 0; i < numberOfDivs; i++) {    
-            const newDiv = document.createElement('div');
-            // Test to see if the divs are created
-            newDiv.textContent = `Div ${ i + 1}`;
-            container.appendChild(newDiv);
+    const num = prompt('Enter a number for size of grid (max 100):');
+    const size = parseInt(num, 10);
+
+    // Check if the input is a number and not less than 1
+    if ( size > 0 && size < 100 ) {
+        const squares = document.createElement('div');
+        squares.setAttribute('class', 'squares');
+
+        squares.style.width = `${size*40}px`;
+        // Create grid squares
+        for ( let row = 0; row < size**2; row++ ) {
+            const square = document.createElement('div');
+            square.setAttribute('class', 'square');
+            squares.appendChild(square);
+            container.appendChild(squares);
+
+            // Change color on hover
+            square.addEventListener('mouseover', () => {
+                square.style.backgroundColor = 'blue';
+
+            } )
         }
     } else {
         alert('Grid is too big. Please type in less than 100');
