@@ -1,8 +1,6 @@
 const container = document.getElementById('container');
 const resetButton = document.getElementById('reset');
 
-// TODO: When creating new Div's make them number of columns and rows not just a total amount of Div's
-
 // Function to create Div's of no more than 100
 function createGrid () {
     // Ask user for grid size
@@ -22,6 +20,7 @@ function createGrid () {
             squares.appendChild(square);
             container.appendChild(squares);
 
+            // TODO: use different colours and opacity
             // Change color on hover
             square.addEventListener('mouseover', () => {
                 square.style.backgroundColor = 'blue';
